@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mochiy+Pop+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,800;1,6..12,300;1,6..12,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Protfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+   
+}
+.navbar{
+    display: flex;
+    gap: 3.6rem;
+   height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fffdfd;
+    position: relative;
+   
+}
+.left-conteiner , .right-conteiner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-conteiner{
+    width: 75%;
+    background: #262525;
+    padding-left:3.2rem;
+}
+.right-conteiner{
+    width: 25%;
+    background: linear-gradient(-45deg, #3877ff, #262525 70%);
+    display: flex;}
+    .icons .fa-brands{
+        color: #fff;
+    }
+    .icons .fa-solid{
+        color: #fff;
+       
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 2.9rem;
+    }
+    .content {
+        margin-left: 3.9rem;
+    }
+    .content h2{
+        font-size: 1.9rem;
+        color: aqua;
+        margin-bottom: 1.2rem ;
+    }
+    .content h1{
+        font-size: 3.9rem;
+        color:red;
+    }
+    .content .detail{
+        font-size: 1.2rem;
+        color: #fff;
+        max-width: 40rem;
+        margin: 1.2rem 0 3.1rem;
+        line-height: 2.0rem;
+
+    }
+    .btn-conteiner button{
+        border: .1rem solid #5DB9EE;
+        font-size: 1.1rem;
+        padding: .8rem 1.5rem;
+        border-radius: .6rem;
+        cursor: pointer;
+        transition: 2s ease;
+        font-weight: bold;
+    }
+    button:nth-child(1){
+        background-color: #0ba4fd;
+        color: #262525;
+    }
+    button:nth-child(2){
+        background: transparent;
+        color: #24a5ef;
+        margin-left: 2rem;
+        
+    }
+    button:nth-child(1):hover{
+        background:transparent;
+        color: #0d9cef;
+    }
+    button:nth-child(2):hover{
+        background:#0d9cef;;
+        color: #020b11;
+    }
+    .icons :hover{
+        cursor: pointer;
+        background: linear-gradient(#fff,#3877ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .design .circle {
+        aspect-ratio:1 ;
+        position: absolute;
+        border-radius:50%;
+        top:50%;
+        left:75%;
+        transform: translate(-50%,-50%);        
+
+    }
+    .circle:nth-child(1){
+        background:linear-gradient(90deg, transparent 50%, #262525 50%) ;
+        width: 30rem;
+
+    }
+    .circle:nth-child(2){
+       
+        width: 25rem;
+        background-image: url(img/24553333363.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 
+        0 0 4rem #fff ;
+        
+    }
+    .navbar li a::after,.navbar.active ::after{
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: .1rem;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform .5s;
+    }
+    .navbar li a:hover::after ,.navbar .active::after{
+        transform: scaleX(1);
+        transform-origin: bottom-left;
+
+    } 
